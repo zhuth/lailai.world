@@ -9,11 +9,10 @@
   <h1>Hello World!</h1>
   <script>
     // 探测本机是否能访问局域网：加载内网服务的图片
-    // 成功 -> 跳转到内网导航页 au.dh.innovors.com；失败 -> 停留在本页（默认即 Hello World）
     (function () {
       var probe = new Image();
       probe.onload = function () {
-        window.location.replace('https://au.dh.innovors.com');
+        window.location.replace('https://portal.lailai.world');
       };
       // onerror 时无需处理：页面保持默认的 Hello World
       probe.onerror = function () {};
